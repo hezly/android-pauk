@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#ffa000</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="ungu">#BF00FF</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFD700</color>
+    <color name="yellow2">#C6C42D</color>
+    <color name="green">#00FF00</color>
+    <color name="pink">#FF007F</color>
+    <color name="white">#fff</color>
+    <color name="fab_pressed">#546e7a</color>
+
+    <color name="color3">#f7eb05</color>
+    <color name="primary">#315e97</color>
+    <color name="primaryDark">#294E7D</color>
+    <color name="accent">#897dae</color>
+    <color name="accentLight">#ff988db6</color>
+    <color name="background">#eeeeee</color>
+    <color name="lightGray">#e6e6e6</color>
+    <color name="textLightGray">#8f8f8f</color>
+    <color name="textGreyHeader">#ff818181</color>
+    <color name="notificationContentText">#737373</color>
+    <color name="error">#da1b21</color>
+    <color name="iconTint">#8e8e8e</color>
+    <color name="default_colour_grey">#8e8e8e</color>
+    <color name="emptyColour">#bababa</color>
+    <color name="NotificationTitle">#ffffff</color>
+    <color name="headertop">#9D2933</color>
+
+</resources>

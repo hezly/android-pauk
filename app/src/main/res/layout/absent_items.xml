@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="86dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/thumbnail_image"
+        android:layout_toLeftOf="@+id/active_image"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                tools:text="Subject Title : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/absent_subject"
+                android:layout_width="match_parent"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                tools:text="Subject"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/subject"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:text="Date : "/>
+            <TextView
+                android:id="@+id/absent_date_time"
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:text="Date"
+                android:layout_toRightOf="@+id/date"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:text="Type : "/>
+
+            <TextView
+                android:id="@+id/absent_type"
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:text="Type"
+                android:layout_toRightOf="@id/type"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

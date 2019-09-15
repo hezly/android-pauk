@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EventActivity">
+
+
+    <TextView
+        android:id="@+id/assignmentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="CLICK ON ASSIGNMENT TITLE TO SET ALARM"/>
+
+    <ListView
+        android:id="@+id/assList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/assignmentText"
+        android:layout_marginTop="0dp"
+        android:longClickable="true"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_view_ass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/no_assignment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/no_assignment" />
+    </RelativeLayout>
+
+</RelativeLayout>

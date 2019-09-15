@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EventActivity">
+
+    <TextView
+        android:id="@+id/nimText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="Click here to Input your NIM!"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/reminderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="Your Absent This Month"
+        android:layout_below="@+id/nimText"/>
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reminderText"/>
+
+    <ListView
+        android:id="@+id/listAbsent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/absent_items" />
+
+    <RelativeLayout
+        android:id="@+id/empty_view_absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/no_reminder_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="@string/no_absen"/>
+    </RelativeLayout>
+
+</RelativeLayout>

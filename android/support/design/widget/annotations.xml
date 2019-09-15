@@ -1,0 +1,5 @@
+<root>
+    <item name='android.support.design.widget.CollapsingToolbarLayout'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
